@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CategoryCard } from "./CategoryCard";
+
 
 export const Navbar = () => {
   const [expanded, setExpanded] = useState(true);
@@ -12,7 +12,7 @@ export const Navbar = () => {
     <>
       <header
         className={`bg-gray-900 py-5 flex flex-col  justify-center transition-all duration-500 mb-20 ${
-          expanded ? "h-screen" : "h-16"
+          expanded ? "h-screen fixed top-0 left-0 right-0" : "h-16"
         }`}
       >
         <div

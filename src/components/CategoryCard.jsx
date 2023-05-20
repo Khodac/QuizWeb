@@ -7,7 +7,7 @@ export const CategoryCard = ({category, alt, src, gradientColor}) => {
       <Link
 
         to={`/category/${category}`}
-        className={`flex flex-col flex-wrap w-96 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r ${gradientColor} transition-all hover:scale-105`}
+        className={`flex flex-col flex-wrap  w-96 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r ${gradientColor} transition-all hover:scale-105`}
       >
         <div className="p-5 flex justify-center items-center">
 
