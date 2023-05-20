@@ -5,8 +5,8 @@ import Geografia from './assets/geografía.png';
 import Historia from './assets/historia.png';
 import Literatura from './assets/literatura.png';
 import Tecnologia from './assets/tecnología.png';
-import Arte from './assets/yarte.png'
-import Cine from './assets/ycine.png'
+import Arte from './assets/arte.png'
+import Cine from './assets/cine.png'
 
 export const imgs = [
 
@@ -928,7 +928,7 @@ export const questions = [
 		id: 85,
 		difficulty: 'Fácil',
 		question: '¿Quién dirigió la película "El Padrino"?',
-		category: 'cine',
+		category: cine,
 		correct_answer: 'Francis Ford Coppola',
 		incorrect_answers: ['Martin Scorsese', 'Steven Spielberg', 'Alfred Hitchcock'],
 	},
@@ -936,7 +936,7 @@ export const questions = [
 		id: 86,
 		difficulty: 'Medio',
 		question: '¿Cuál es la película más taquillera de todos los tiempos?',
-		category: 'cine',
+		category: cine,
 		correct_answer: 'Avengers: Endgame',
 		incorrect_answers: ['Titanic', 'Avatar', 'Star Wars: El despertar de la fuerza'],
 	},
@@ -944,7 +944,7 @@ export const questions = [
 		id: 87,
 		difficulty: 'Fácil',
 		question: '¿Quién interpreta a James Bond en la película "Casino Royale"?',
-		category: 'cine',
+		category: cine,
 		correct_answer: 'Daniel Craig',
 		incorrect_answers: ['Sean Connery', 'Pierce Brosnan', 'Roger Moore'],
 	},
@@ -952,7 +952,7 @@ export const questions = [
 		id: 88,
 		difficulty: 'Difícil',
 		question: '¿Cuál es la película ganadora del Óscar a la Mejor Película en 2020?',
-		category: 'cine',
+		category: cine,
 		correct_answer: 'Parasite',
 		incorrect_answers: ['1917', 'Joker', 'Once Upon a Time... in Hollywood'],
 	},
@@ -960,7 +960,7 @@ export const questions = [
 		id: 89,
 		difficulty: 'Medio',
 		question: '¿Quién interpretó a Neo en la trilogía de "The Matrix"?',
-		category: 'cine',
+		category: cine,
 		correct_answer: 'Keanu Reeves',
 		incorrect_answers: ['Laurence Fishburne', 'Hugo Weaving', 'Carrie-Anne Moss'],
 	},
@@ -968,7 +968,7 @@ export const questions = [
 		id: 90,
 		difficulty: 'Fácil',
 		question: '¿Cuál es la película animada más taquillera de la historia?',
-		category: 'cine',
+		category: cine,
 		correct_answer: 'El Rey León',
 		incorrect_answers: ['Frozen', 'Toy Story 4', 'Los Increíbles 2'],
 	},
@@ -976,7 +976,7 @@ export const questions = [
 		id: 91,
 		difficulty: 'Medio',
 		question: '¿Quién dirigió la trilogía "El Señor de los Anillos"?',
-		category: 'cine',
+		category: cine,
 		correct_answer: 'Peter Jackson',
 		incorrect_answers: ['Christopher Nolan', 'James Cameron', 'Tim Burton'],
 	},
@@ -984,7 +984,7 @@ export const questions = [
 		id: 92,
 		difficulty: 'Difícil',
 		question: '¿Cuál es la película más antigua que ha ganado el Óscar a la Mejor Película?',
-		category: 'cine',
+		category: cine,
 		correct_answer: 'Wings',
 		incorrect_answers: ['Gone with the Wind', 'Casablanca', 'Citizen Kane'],
 	},
@@ -992,7 +992,7 @@ export const questions = [
 		id: 93,
 		difficulty: 'Fácil',
 		question: '¿Quién interpreta a Iron Man en el Universo Cinematográfico de Marvel?',
-		category: 'cine',
+		category: cine,
 		correct_answer: 'Robert Downey Jr.',
 		incorrect_answers: ['Chris Evans', 'Chris Hemsworth', 'Mark Ruffalo'],
 	},
@@ -1000,7 +1000,7 @@ export const questions = [
 		id: 94,
 		difficulty: 'Medio',
 		question: '¿Cuál es la película ganadora del Óscar a la Mejor Película en 2021?',
-		category: 'cine',
+		category: cine,
 		correct_answer: 'Nomadland',
 		incorrect_answers: ['The Trial of the Chicago 7', 'Minari', 'Promising Young Woman'],
 	  },
@@ -1011,7 +1011,7 @@ export const questions = [
 		id: 95,
 		difficulty: "Medio",
 		question: "¿Cuál es el período artístico al que pertenece la pintura 'La última cena' de Leonardo da Vinci?",
-		category: "arte",
+		category: arte,
 		correct_answer: "Renacimiento",
 		incorrect_answers: ["Barroco", "Impresionismo", "Realismo"]
 	  },
@@ -1019,7 +1019,7 @@ export const questions = [
 		id: 96,
 		difficulty: "Fácil",
 		question: "¿Quién pintó el famoso cuadro 'La Gioconda'?",
-		category: "arte",
+		category: arte,
 		correct_answer: "Leonardo da Vinci",
 		incorrect_answers: ["Pablo Picasso", "Vincent van Gogh", "Salvador Dalí"]
 	  },
@@ -1027,7 +1027,7 @@ export const questions = [
 		id: 97,
 		difficulty: "Difícil",
 		question: "¿Cuál de las siguientes esculturas es obra de Miguel Ángel?",
-		category: "arte",
+		category: arte,
 		correct_answer: "La Pietà",
 		incorrect_answers: ["El Pensador", "Venus de Milo", "El David"]
 	  },
@@ -1035,7 +1035,7 @@ export const questions = [
 		id: 98,
 		difficulty: "Medio",
 		question: "¿En qué ciudad se encuentra el Museo del Louvre?",
-		category: "arte",
+		category: arte,
 		correct_answer: "París",
 		incorrect_answers: ["Roma", "Londres", "Nueva York"]
 	  },
@@ -1043,7 +1043,7 @@ export const questions = [
 		id: 99,
 		difficulty: "Fácil",
 		question: "¿Quién es el autor de la pintura 'La noche estrellada'?",
-		category: "arte",
+		category: arte,
 		correct_answer: "Vincent van Gogh",
 		incorrect_answers: ["Pablo Picasso", "Salvador Dalí", "Claude Monet"]
 	  },
@@ -1051,7 +1051,7 @@ export const questions = [
 		id: 100,
 		difficulty: "Medio",
 		question: "¿Cuál de las siguientes pinturas es considerada una obra maestra del impresionismo?",
-		category: "arte",
+		category: arte,
 		correct_answer: "Impresión, sol naciente",
 		incorrect_answers: ["La persistencia de la memoria", "Los jugadores de cartas", "La última cena"]
 	  },
@@ -1059,7 +1059,7 @@ export const questions = [
 		id: 101,
 		difficulty: "Difícil",
 		question: "¿Cuál de los siguientes artistas es conocido por sus esculturas de bronce y mármol, incluyendo 'El Pensador'?",
-		category: "arte",
+		category: arte,
 		correct_answer: "Auguste Rodin",
 		incorrect_answers: ["Michelangelo Buonarroti", "Pablo Picasso", "Leonardo da Vinci"]
 	  },
@@ -1067,7 +1067,7 @@ export const questions = [
 		id: 102,
 		difficulty: "Fácil",
 		question: "¿Quién es el autor de la obra 'Guernica'?",
-		category: "arte",
+		category: arte,
 		correct_answer: "Pablo Picasso",
 		incorrect_answers: ["Vincent van Gogh", "Salvador Dalí", "Claude Monet"]
 	  },
@@ -1075,7 +1075,7 @@ export const questions = [
 		id: 103,
 		difficulty: "Difícil",
 		question: "¿Cuál de las siguientes pinturas pertenece al período del Renacimiento?",
-		category: "arte",
+		category: arte,
 		correct_answer: "La creación de Adán",
 		incorrect_answers: ["La persistencia de la memoria", "Los girasoles", "La última cena"]
 	  },
@@ -1083,7 +1083,7 @@ export const questions = [
 		id: 104,
 		difficulty: "Fácil",
 		question: "¿Cuál de los siguientes artistas es conocido por su técnica de corte y collage?",
-		category: "arte",
+		category: arte,
 		correct_answer: "Henri Matisse",
 		incorrect_answers: ["Pablo Picasso", "Vincent van Gogh", "Salvador Dalí"]
 	  }

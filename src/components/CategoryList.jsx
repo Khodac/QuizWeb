@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { imgs, categories } from "../data";
+import { CategoryCard } from "./CategoryCard"
 
 const [
   imgCiencia,
@@ -16,222 +16,89 @@ const [
 
 export const CategoryList = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-4 mt-10">
+    <div className="flex flex-wrap justify-center items-center gap-4 ">
 
       {/* Category Link Ciencia */}
 
-      <Link
-
-        to={`/category/${categories.ciencia}`}
-        className="flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105"
-      >
-        <div className="p-5 flex justify-center items-center">
-
-          <img
-            src={imgCiencia}
-            alt={`Categoria ${categories.ciencia}`}
-            className="w-36" />
-
-        </div>
-
-        <h1
-          className="p-4 text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60">
-          {categories.ciencia}
-        </h1>
-
-      </Link>
-
+      <CategoryCard 
+          category={categories.ciencia} 
+          src={imgCiencia} 
+          alt={`Categoria ${categories.ciencia}`} 
+          gradientColor='from-purple-500 to-pink-500' 
+      />
 
       {/* Category Link Deportes */}
 
-      <Link
-
-        to={`/category/${categories.ciencia}`}
-        className="flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105"
-      >
-        <div className="p-5 flex justify-center items-center">
-
-          <img
-            src={imgDeportes}
-            alt={`Categoria ${categories.ciencia}`}
-            className="w-36" />
-
-        </div>
-
-        <h1
-          className="p-4 text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60">
-          {categories.deportes}
-        </h1>
-
-      </Link>
-
+      <CategoryCard 
+          category={categories.deportes} 
+          src={imgDeportes} 
+          alt={`Categoria ${categories.deportes}`} 
+          gradientColor=' from-lime-400 to-teal-500' 
+      />
 
       {/* Category Link Filosofia */}
 
-      <Link
-
-        to={`/category/${categories.ciencia}`}
-        className="flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105"
-      >
-        <div className="p-5 flex justify-center items-center">
-
-          <img
-            src={imgFilosofia}
-            alt={`Categoria ${categories.ciencia}`}
-            className="w-36" />
-
-        </div>
-
-        <h1
-          className="p-4 text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60">
-          {categories.filosofia}
-        </h1>
-
-      </Link>
-
+      <CategoryCard 
+          category={categories.filosofia} 
+          src={imgFilosofia} 
+          alt={`Categoria ${categories.filosofia}`} 
+          gradientColor='from-orange-600 to-yellow-400' 
+      />
 
       {/* Category Link Geografia */}
 
-      <Link
-
-        to={`/category/${categories.ciencia}`}
-        className="flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105"
-      >
-        <div className="p-5 flex justify-center items-center">
-
-          <img
-            src={imgGeografia}
-            alt={`Categoria ${categories.ciencia}`}
-            className="w-36" />
-
-        </div>
-
-        <h1
-          className="p-4 text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60">
-          {categories.geografia}
-        </h1>
-
-      </Link>
-
+      <CategoryCard 
+          category={categories.geografia} 
+          src={imgGeografia} 
+          alt={`Categoria ${categories.geografia}`} 
+          gradientColor=' from-indigo-400 to-emerald-400' 
+      />
 
       {/* Category Link Historia */}
 
-      <Link
-
-        to={`/category/${categories.ciencia}`}
-        className="flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105"
-      >
-        <div className="p-5 flex justify-center items-center">
-
-          <img
-            src={imgHistoria}
-            alt={`Categoria ${categories.ciencia}`}
-            className="w-36" />
-
-        </div>
-
-        <h1
-          className="p-4 text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60">
-          {categories.historia}
-        </h1>
-
-      </Link>
-
+      <CategoryCard 
+          category={categories.historia} 
+          src={imgHistoria} 
+          alt={`Categoria ${categories.historia}`} 
+          gradientColor='from-rose-600 to-pink-500' 
+      />
 
       {/* Category Link Literatura */}
 
-      <Link
-
-        to={`/category/${categories.ciencia}`}
-        className="flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105"
-      >
-        <div className="p-5 flex justify-center items-center">
-
-          <img
-            src={imgLiteratura}
-            alt={`Categoria ${categories.ciencia}`}
-            className="w-36" />
-
-        </div>
-
-        <h1
-          className="p-4 text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60">
-          {categories.literatura}
-        </h1>
-
-      </Link>
-
+      <CategoryCard 
+          category={categories.literatura} 
+          src={imgLiteratura} 
+          alt={`Categoria ${categories.literatura}`} 
+          gradientColor='from-blue-500 to-sky-300' 
+      />
 
       {/* Category Link Tecnología */}
 
-      <Link
-
-        to={`/category/${categories.ciencia}`}
-        className="flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105"
-      >
-        <div className="p-5 flex justify-center items-center">
-
-          <img
-            src={imgTecnologia}
-            alt={`Categoria ${categories.ciencia}`}
-            className="w-36" />
-
-        </div>
-
-        <h1
-          className="p-4 text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60">
-          {categories.tecnologia}
-        </h1>
-
-      </Link>
-
+      <CategoryCard 
+          category={categories.tecnologia} 
+          src={imgTecnologia} 
+          alt={`Categoria ${categories.tecnologia}`} 
+          gradientColor=' from-red-600 to-orange-500' 
+      />
 
       {/* Category Link Arte */}
 
-      <Link
-
-        to={`/category/${categories.ciencia}`}
-        className="flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105"
-      >
-        <div className="p-5 flex justify-center items-center">
-
-          <img
-            src={imgArte}
-            alt={`Categoria ${categories.arte}`}
-            className="w-36" />
-
-        </div>
-
-        <h1
-          className="p-4 text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60">
-          {categories.arte}
-        </h1>
-
-      </Link>
-
-
+      <CategoryCard 
+          category={categories.arte} 
+          src={imgArte} 
+          alt={`Categoria ${categories.arte}`} 
+          gradientColor='from-green-600 to-emerald-500' 
+      />
+      
       {/* Category Link Cine */}
 
-      <Link
-
-        to={`/category/${categories.ciencia}`}
-        className="flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105"
-      >
-        <div className="p-5 flex justify-center items-center">
-
-          <img
-            src={imgCine}
-            alt={`Categoria ${categories.ciencia}`}
-            className="w-36" />
-
-        </div>
-
-        <h1
-          className="p-4 text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60">
-          {categories.cine}
-        </h1>
-
-      </Link>
+      <CategoryCard 
+          category={categories.cine} 
+          src={imgCine} 
+          alt={`Categoria ${categories.cine}`} 
+          gradientColor='from-fuchsia-800 to-violet-400' 
+      />
+      
     </div>
   );
 };
