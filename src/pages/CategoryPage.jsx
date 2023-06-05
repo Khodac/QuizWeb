@@ -31,7 +31,7 @@ export const CategoryPage = () => {
 	return (
 		<div
 			className='container flex flex-col items-center justify-center gap-10'
-			style={{ height: 'calc(100vh - 5rem)' }}
+			style={{ height: 'calc(100vh - 20rem)' }}
 		>
 			{activeQuiz ? (
 				<Question
@@ -58,7 +58,7 @@ export const CategoryPage = () => {
 					</div>
 
 					<button
-						className='text-white bg-gray-900 py-2 rounded-lg font-bold px-5 transition-all hover:bg-yellow-500 hover:text-gray-900'
+						className='text-4xl text-white bg-gray-900 py-2 rounded-lg font-bold px-5 transition-all hover:bg-yellow-500 hover:text-gray-900'
 						onClick={() => setActiveQuiz(true)}
 					>
 						Iniciar Quiz
