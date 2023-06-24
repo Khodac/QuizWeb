@@ -13,7 +13,7 @@ export const Question = ({
   const [answered, setAnswered] = useState(false);
   const [answersRandom, setAnswersRandom] = useState([]);
   const [activeResults, setActiveResults] = useState(false);
-  const [timer, setTimer] = useState(30);
+  const [timer, setTimer] = useState(40);
 
   useEffect(() => {
     const answers = [
@@ -41,11 +41,13 @@ export const Question = ({
   }, [timer, indexQuestion, questionsFiltered.length]);
 
   const checkAnswer = (answerText, index) => {
-    setSelectAnswerIndex(index);
-    setAnswered(true);
+    if (!answered) {
+      setSelectAnswerIndex(index);
+      setAnswered(true);
 
-    if (answerText === filteredQuestion.correct_answer) {
-      setScore(score + 1);
+      if (answerText === filteredQuestion.correct_answer) {
+        setScore(score + 1);
+      }
     }
   };
 
@@ -59,7 +61,7 @@ export const Question = ({
     setScore(0);
     setActiveQuiz(false);
     setIndexQuestion(0);
-    setTimer(30);
+    setTimer(40);
   };
 
   return (
@@ -107,6 +109,8 @@ export const Question = ({
                   buttonClass += isCorrect ? ' bg-green-500' : ' bg-red-500';
                 } else if (isCorrect) {
                   buttonClass += ' bg-green-500';
+                } else {
+                  buttonClass += ' bg-gray-200';
                 }
               }
 
@@ -115,7 +119,7 @@ export const Question = ({
                   className={buttonClass}
                   key={answer}
                   onClick={() => checkAnswer(answer, index)}
-                  disabled={answered && isSelected}
+                  disabled={answered && !isSelected}
                 >
                   <p className="font-medium text-center text-sm">{answer}</p>
                 </button>
@@ -135,6 +139,7 @@ export const Question = ({
               <button
                 className="border-2 border-yellow-600 text-yellow-600 rounded-md px-5 py-2 hover:bg-yellow-600 hover:text-black font-medium"
                 onClick={onNextQuestion}
+                disabled={!answered}
               >
                 Siguiente Pregunta
               </button>
@@ -142,7 +147,9 @@ export const Question = ({
           </div>
 
           <div className="flex justify-center mt-4">
-            <span className="font-bold">{timer}s</span>
+            <span className="font-bold">
+              Tiempo restante: {timer}s
+            </span>
           </div>
         </div>
       )}
