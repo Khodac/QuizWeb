@@ -11,7 +11,7 @@ export const Navbar = () => {
   return (
     <>
       <header
-        className={`bg-gray-900 py-5 flex flex-col  justify-center transition-all duration-500 mb-20 ${
+        className={`bg-gray-900 py-5 flex flex-col  justify-center transition-all duration-500 mb-10 ${
           expanded ? "h-screen fixed top-0 left-0 right-0" : "h-16"
         }`}
       >
@@ -36,7 +36,7 @@ export const Navbar = () => {
         </div>
         {!expanded && (
           <span className="flex justify-center items-center h-screen bg-gray-900">
-            <h2 className="text-white text-4xl font-bold">¡Elige la categoría!</h2>
+            <h2 className="text-white text-4xl font-bold">Quiz App</h2>
           </span>
         )}
       </header>
