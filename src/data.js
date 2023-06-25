@@ -1,12 +1,12 @@
-import Ciencia from './assets/ciencia.png';
-import Deportes from './assets/deportes.png';
-import Filosofia from './assets/filosofía.png';
-import Geografia from './assets/geografía.png';
-import Historia from './assets/historia.png';
-import Literatura from './assets/literatura.png';
-import Tecnologia from './assets/tecnología.png';
-import Arte from './assets/arte.png'
-import Cine from './assets/cine.png'
+import Ciencia from '/assets/ciencia.png';
+import Deportes from '/assets/deportes.png';
+import Filosofia from '/assets/filosofía.png';
+import Geografia from '/assets/geografía.png';
+import Historia from '/assets/historia.png';
+import Literatura from '/assets/literatura.png';
+import Tecnologia from '/assets/tecnología.png';
+import Arte from '/assets/arte.png'
+import Cine from '/assets/cine.png'
 
 export const imgs = [
 
